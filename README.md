@@ -1,6 +1,6 @@
 # JocAmbDaus — Juego de dados y tablero (WinForms .NET Framework 4.7.2)
 
-Juego local de 2 a 4 jugadores. Primero se tira el dado para decidir el orden de turno (con desempate), luego las 4 fichas de cada jugador avanzan por un tablero de 100 casillas. Gana quien lleve todas sus fichas a la meta.
+Juego local de 2 a 4 jugadores. Primero se tira el dado para decidir el orden de turno, luego las 4 fichas de cada jugador avanzan por un tablero de 100 casillas. Gana quien lleve todas sus fichas a la meta.
 
 ## Estructura
 
@@ -29,7 +29,7 @@ JocAmbDaus/
 ## Cómo se juega
 
 1. Elige 2-4 jugadores, pon nick y color (no se puede repetir color).
-2. Fase dados: cada jugador clica su dado. Animación de 8-15 ticks. El valor más alto sale primero. Si hay empate, solo los empatados repiten.
+2. Fase dados: cada jugador clica su dado. Animación de 8-15 ticks. El valor más alto sale primero. Si hay empate, quien haya tirado primero queda por delante.
 3. Fase tablero: se muestra `pnlTauler` 10x10 (70px, 700x700). Turnos automáticos cada 1,5s: se tira dado, la primera ficha no llegada avanza. Casella ocupada = no mueve. Al pasar de 100, la ficha va a meta y el sobrante mueve otra ficha.
 4. Final: el panel se tiñe con el color del ganador, suena el mp3 y sale el MessageBox.
 5. `Esc` cierra el juego. Cabecera con `✕` cerrar, `—` minimizar, `🌙/☀️` cambiar tema.
